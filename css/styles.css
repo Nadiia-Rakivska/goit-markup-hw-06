@@ -198,6 +198,19 @@ button {
   height: 1px;
 }
 
+.burger-btn.is-open:hover,
+ .burger-btn.is-open:focus {
+  border: none;
+  background-color: var(--ocean);
+}
+
+.burger-btn.is-open:hover .burger-icon::before,
+.burger-btn.is-open:hover .burger-icon::after,
+.burger-btn.is-open:focus .burger-icon::before,
+.burger-btn.is-open:focus .burger-icon::after {
+background-color: var(--white);
+}
+
 .burger-menu {
   z-index: 1;
   position: fixed;
@@ -478,7 +491,6 @@ button {
 }
 
 .advantages-list {
-  /* width: 288px; */
   display: flex;
   flex-direction: column;
   gap: 72px;
