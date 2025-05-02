@@ -170,7 +170,6 @@ button {
 
 .burger-btn.is-open {
   position: fixed;
-  position: absolute;
   z-index: 999;
   right: 24px;
   top: 24px;
@@ -198,18 +197,6 @@ button {
   height: 1px;
 }
 
-/* .burger-btn.is-open:hover,
-.burger-btn.is-open:focus {
-  border: none;
-  background-color: var(--ocean);
-}
-
-.burger-btn.is-open:hover .burger-icon::before,
-.burger-btn.is-open:hover .burger-icon::after,
-.burger-btn.is-open:focus .burger-icon::before,
-.burger-btn.is-open:focus .burger-icon::after {
-  background-color: var(--white);
-} */
 
 .burger-menu {
   z-index: 1;
