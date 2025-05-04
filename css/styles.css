@@ -419,6 +419,7 @@ button {
   max-width: 496px;
   margin-right: auto;
   margin-left: auto;
+  max-width: 216px;
 }
 
 .servise {
@@ -497,7 +498,7 @@ button {
   }
 }
 
-.container-advantages {
+.advantages {
   padding-top: 96px;
   padding-bottom: 96px;
 }
@@ -549,7 +550,7 @@ button {
 }
 
 @media screen and (min-width: 1158px) {
-  .container-advantages {
+  .advantages {
     padding-top: 120px;
     padding-bottom: 120px;
   }
@@ -686,7 +687,7 @@ button {
   }
 }
 
-.container-portfolio {
+.our-portfolio {
   padding-top: 96px;
   padding-bottom: 96px;
 }
@@ -728,10 +729,7 @@ button {
   align-items: center;
 }
 
-.portfolio-tablet,
-.portfolio-main {
-  display: none;
-}
+
 
 .ovrlay-text {
   width: 100%;
@@ -777,15 +775,7 @@ button {
 }
 
 @media screen and (min-width: 768px) {
-  .portfolio-mobile {
-    display: none;
-  }
-
-  .portfolio-tablet {
-    display: block;
-    max-width: 100%;
-    height: auto;
-  }
+ 
 
   .our-portfolio-list {
     flex-wrap: wrap;
@@ -799,17 +789,8 @@ button {
 }
 
 @media screen and (min-width: 1158px) {
-  .portfolio-main {
-    display: block;
-    max-width: 100%;
-    height: auto;
-  }
-
-  .portfolio-tablet {
-    display: none;
-  }
-
-  .container-portfolio {
+ 
+  .our-portfolio {
     padding-top: 120px;
     padding-bottom: 120px;
   }
@@ -825,12 +806,12 @@ button {
 
 .footer {
   background-color: var(--navy-blue);
+  padding-top: 96px;
+    padding-bottom: 96px;
 }
 
 .container-footer {
-  padding-top: 96px;
-  padding-bottom: 96px;
-  display: flex;
+   display: flex;
   flex-direction: column;
   gap: 72px;
 }
@@ -953,18 +934,28 @@ button {
 @media screen and (min-width: 768px) and (max-width:1157px) {
   .container-footer {
     flex-wrap: wrap;
+    width: 584px;
   }
+    
 }
 
 @media screen and (min-width: 768px) {
   .container-footer {
     flex-direction: row;
     gap: 0;
+  
   }
-
+.footer-soc {
+      align-items: baseline;
+}
+.container-footer .logo {
+  margin: 0 0 16px 0;
+}
   .footer-title {
     margin-bottom: 72px;
     margin-right: 24px;
+    align-items: baseline;
+    
   }
 
   .form-sub-email {
@@ -975,16 +966,14 @@ button {
     flex-direction: row;
     gap: 24px;
   }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1157px) {
-  .container-footer {
-    padding-left: 108px;
+  .footer-subscribe {
+    align-items: baseline;
   }
 }
 
+
 @media screen and (min-width: 1158px) {
-  .container-footer {
+  .footer {
     padding-top: 100px;
     padding-bottom: 100px;
   }
